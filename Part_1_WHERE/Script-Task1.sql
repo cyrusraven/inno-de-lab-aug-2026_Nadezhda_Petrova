@@ -1,4 +1,4 @@
 -- Fulfilling the task condition
 select first_name, last_name, age, country
 from customers 
-where age > 25; -- Where the age is over 25
+where age > 25 and country = 'USA'; -- Where the age is over 25 and country is USA
