@@ -2,7 +2,7 @@ select
     c.first_name || ' ' || c.last_name as full_name,
     c.country,
     count(o.order_id) as total_orders,
-    coalesce(sum(o.amount), 0) as total_amount
+    sum(o.amount) as total_amount
 from customers as c
 join orders as o on c.customer_id = o.customer_id
 -- Filter customers who have at least one delivered shipment
