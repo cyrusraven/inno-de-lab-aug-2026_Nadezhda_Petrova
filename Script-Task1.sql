@@ -7,13 +7,13 @@ from employees;
 
 select FirstName, LastName
 from employees
-where Department = 'IT'
+where Department = 'IT';
 
 update employees
 set Salary = 65000.00
-where employeeid = 1
+where FirstName = 'Alice' and LastName = 'Smith';
 
 delete from employees
-where employeeid = 5;
+where FirstName = 'Eve' and LastName = 'Davis';
 
 SELECT * FROM employees;
